@@ -61,12 +61,7 @@
       letter-spacing: -0.8px;
     }
   }
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .composition {
-      background: 0 0 no-repeat url(../images/bgnd-composition@2x.png);
-    }
-  }
-
+ 
   .compositionList {
     margin: 0;
     width: 572px;
