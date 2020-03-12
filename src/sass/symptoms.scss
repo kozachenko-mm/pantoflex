@@ -60,6 +60,11 @@
       width: 872px;
     }
   }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .symptoms {
+      background: 500px 100px no-repeat url(../images/man@2x.png);
+    }
+  }
 
   .symptomsList {
     width: 610px;

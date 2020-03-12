@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://luxplanjay.github.io/gulp-starter-kit",
+  "homepage": "https://kozachenko-mm.github.io/pantoflex/.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
@@ -29,6 +29,7 @@
     "del": "^5.1.0",
     "gh-pages": "^2.2.0",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",
     "gulp-cache-bust": "^1.4.1",
     "gulp-concat": "^2.6.1",

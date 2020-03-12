@@ -4,10 +4,21 @@
   background-repeat: no-repeat;
   padding-bottom: 70px;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .wrapper {
+    background: url(../images/bgnd-top-mob@2x.png), #d2f4fc;
+  }
+}
 
 @media (min-width: 1170px) {
   .wrapper {
     background: center 1892px no-repeat url(../images/cream.png),
       center 0 no-repeat url(../images/bgnd-top.png), #ffffff;
+  }
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .wrapper {
+      background: center 1892px no-repeat url(../images/cream@2x.png),
+        center 0 no-repeat url(../images/bgnd-top@2x.png), #ffffff;
+    }
   }
 }
