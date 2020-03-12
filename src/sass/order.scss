@@ -1,0 +1,148 @@
+.order {
+    font-family: 'Roboto', sans-serif;
+  width: 270px;
+  margin: 0 auto;
+  padding: 24px 22px 44px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  &__text {
+    margin: 0 0 20px;
+    font-size: 28px;
+    color: rgb(87, 116, 184);
+    line-height: 0.929;
+    font-weight: bold;
+  }
+  &__smallText {
+    font-size: 18px;
+    color: rgb(87, 116, 184);
+    line-height: 1.556;
+    font-weight: 500;
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  text-align-last: left;
+}
+
+.price__old {
+  width: 50%;
+  position: relative;
+  > span {
+    font-size: 13px;
+    color: rgb(115, 126, 150);
+    line-height: 1.385;
+  }
+  > p {
+    margin: 0;
+    padding-top: 14px;
+    position: relative;
+    font-size: 28px;
+    color: rgb(115, 126, 150);
+    line-height: 0.857;
+    letter-spacing: -0.9px;
+    span {
+      font-size: 16px;
+      color: rgb(115, 126, 150);
+      line-height: 1.5;
+    }
+    svg {
+      width: 74px;
+      position: absolute;
+      top: 14px;
+      left: 0px;
+    }
+  }
+}
+
+.price__old::before {
+  content: '';
+  display: block;
+  height: 80%;
+  position: absolute;
+  right: 6px;
+  top: 4px;
+  border-right: 1px solid #d9ecf2;
+}
+
+.price__new {
+  width: 50%;
+  padding-left: 6px;
+
+  > span {
+    font-size: 14px;
+    color: rgb(48, 48, 47);
+    line-height: 1.286;
+  }
+  > p {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 44px;
+    color: rgb(54, 189, 227);
+    line-height: 0.545;
+    font-weight: bold;
+    span {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-left: -14px;
+    }
+  }
+}
+
+.timer {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 -12px 6px;
+  p {
+    margin: 0;
+    border: 1px solid #d9ecf2;
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 26px;
+    color: rgb(30, 30, 30);
+    font-weight: bold;
+
+  }
+  span {
+    font-size: 18px;
+    color: rgb(41, 29, 97);
+    line-height: 3;
+  }
+}
+
+.order__button {
+  border-radius: 5px;
+  border: none;
+  background: #36bde3;
+  width: 220px;
+  height: 65px;
+  color: #ffffff;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 0.9;
+  box-shadow: 0 5px 0 #2d96cc;
+  position: relative;
+  cursor: pointer;
+
+  span {
+    font-size: 21px;
+    font-weight: 500;
+  }
+}
+.order__button::after {
+    display: block;
+    content: ' ';
+    position: absolute;
+    bottom: 1px;
+    left: 12px;
+    width: 190px;
+    height: 1px;
+    box-shadow: 0 12px 4px #b7bec2;
+}
+@media (min-width: 1170px) {
+  .order {
+    margin: 0;
+  }
+}

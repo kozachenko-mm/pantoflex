@@ -1,0 +1,128 @@
+.symptoms {
+  margin-bottom: 30px;
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto 64px;
+    font-size: 39px;
+    font-weight: 700;
+    color: rgb(46, 44, 53);
+    line-height: 1.02;
+    text-align: center;
+    letter-spacing: -0.9px;
+    span {
+      color: #f56856;
+    }
+  }
+}
+.symptomsList {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  &__item--title {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(46, 44, 53);
+    line-height: 1.563;
+    letter-spacing: -0.9px;
+  }
+  &__item--text {
+    margin: 0;
+    font-size: 20px;
+    color: rgb(126, 124, 137);
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
+}
+
+.conclusion__svg {
+  display: none;
+  margin-right: 50px;
+}
+.conclusion__text {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(59, 57, 68);
+  line-height: 1.231;
+}
+
+@media (min-width: 1170px) {
+  .symptoms {
+    background: 500px 100px no-repeat url(../images/man.png);
+    padding-bottom: 300px;
+    margin-bottom: 0;
+
+    &__title {
+      font-size: 49px;
+      width: 872px;
+    }
+  }
+
+  .symptomsList {
+    width: 610px;
+    margin-bottom: 104px;
+    &__item {
+      padding-left: 122px;
+      position: relative;
+      margin-bottom: 27px;
+    }
+  }
+  .symptomsList__item::before {
+    display: block;
+    content: '';
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 2px solid #f56856;
+    position: absolute;
+    left: 0;
+    top: 14px;
+  }
+  .symptomsList__item:last-child {
+    margin-bottom: 0;
+  }
+  .symptomsList__item--lightning::before {
+    background: center no-repeat url(../images/lightning.svg);
+  }
+  .symptomsList__item--lock::before {
+    background: center no-repeat url(../images/lock.svg);
+  }
+  .symptomsList__item--foot::before {
+    background: center no-repeat url(../images/foot.svg);
+    fill: #f56856;
+  }
+
+  .conclusion {
+    display: flex;
+  }
+  .conclusion__svg {
+    display: block;
+    position: relative;
+  }
+
+  .conclusion__text {
+    display: block;
+    width: 366px;
+    position: relative;
+  }
+
+  .conclusion__svg::before {
+    display: block;
+    content: '';
+    width: 70px;
+    border-top: 2px solid #b9cfdd;
+    position: absolute;
+    top: -30px;
+  }
+  .conclusion__text::before {
+    display: block;
+    content: '';
+    width: 135px;
+    border-top: 2px solid #e5f2fa;
+    position: absolute;
+    top: -30px;
+  }
+}

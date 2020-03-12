@@ -1,0 +1,13 @@
+.wrapper {
+  background: url(../images/bgnd-top-mob.png), #d2f4fc;
+  background-position: center 100px;
+  background-repeat: no-repeat;
+  padding-bottom: 70px;
+}
+
+@media (min-width: 1170px) {
+  .wrapper {
+    background: center 1892px no-repeat url(../images/cream.png),
+      center 0 no-repeat url(../images/bgnd-top.png), #ffffff;
+  }
+}

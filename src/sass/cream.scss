@@ -1,0 +1,39 @@
+.cream {
+    text-align: center;
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 40px;
+    font-size: 60px;
+    color: rgb(59, 57, 68);
+    line-height: 0.667;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 0.95px;
+    span {
+      color: #5774b8;
+    }
+
+    
+  }
+  &__text {
+    margin: 0 0 45px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 28px;
+      color: rgb(59, 57, 68);
+      letter-spacing: 0.7px;
+    }
+}
+
+@media (min-width: 1170px) {
+  .cream {
+    text-align: left;
+
+//    padding-bottom: 70px;
+   margin-bottom: 215px;
+  }
+
+  &__text {
+    width: 600px;
+
+  }
+}
