@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="order order--modal">
+          <p class="order__text">Закажите сейчас по акции</p>
+          <div class="price">
+            <div class="price__old">
+              <span>Старая цена</span>
+              <p>
+                1980 <span>руб.</span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="68px"
+                  height="24px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    fill="rgb(247, 96, 80)"
+                    d="M67.122,23.034 L66.948,24.015 L34.000,13.017 L1.051,24.015 L0.878,23.034 L32.441,12.497 L0.878,1.961 L1.051,0.977 L34.000,11.976 L66.948,0.977 L67.122,1.961 L35.558,12.497 L67.122,23.034 Z"
+                  />
+                </svg>
+              </p>
+            </div>
+            <div class="price__new">
+              <span>Ваша цена</span>
+              <p>990 <span>руб.</span></p>
+            </div>
+          </div>
+          <form class="form" id="form">
+            <input class="input" type="text" name="name" id="neme" placeholder="Имя" />
+            <input class="input" type="phone" name="phone" id="phone" placeholder="Телефон" />
+            <button type="button" class="order__button">
+              Заказать<br /><span>со скидкой</span>
+            </button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

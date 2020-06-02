@@ -16,3 +16,11 @@ img {
 li {
   list-style: none;
 }
+button:active {
+  outline: none;
+  box-shadow: none;
+  transform: translateY(5px);
+}
+button:focus, input:focus {
+  outline: none;
+}

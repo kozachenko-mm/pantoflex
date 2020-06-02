@@ -1,5 +1,5 @@
 .order {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   width: 270px;
   margin: 0 auto;
   padding: 24px 22px 44px;
@@ -95,6 +95,11 @@
   display: flex;
   justify-content: space-around;
   margin: 0 -12px 6px;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   p {
     margin: 0;
     border: 1px solid #d9ecf2;
@@ -103,7 +108,7 @@
     font-size: 26px;
     color: rgb(30, 30, 30);
     font-weight: bold;
-
+    width: 52px;
   }
   span {
     font-size: 18px;
@@ -119,12 +124,14 @@
   width: 220px;
   height: 65px;
   color: #ffffff;
+  font-family: 'Roboto', sans-serif;
   font-size: 27px;
   font-weight: 700;
   line-height: 0.9;
   box-shadow: 0 5px 0 #2d96cc;
   position: relative;
   cursor: pointer;
+  outline-width: 30px;
 
   span {
     font-size: 21px;
@@ -132,17 +139,20 @@
   }
 }
 .order__button::after {
-    display: block;
-    content: ' ';
-    position: absolute;
-    bottom: 1px;
-    left: 12px;
-    width: 190px;
-    height: 1px;
-    box-shadow: 0 12px 4px #b7bec2;
+  display: block;
+  content: ' ';
+  position: absolute;
+  bottom: 1px;
+  left: 12px;
+  width: 190px;
+  height: 1px;
+  box-shadow: 0 12px 4px #b7bec2;
 }
 @media (min-width: 1170px) {
   .order {
     margin: 0;
+  }
+  .order--modal {
+    margin: 0 auto;
   }
 }
